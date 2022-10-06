@@ -12,15 +12,9 @@ class ChildComponent extends React.Component{
         console.log('Constructor Method')
     }
     
-    //this is used to change state based on props overtime
     static getDerivedStateFromProps(props,state){
-        //console.log('Child getDerivedStateFromProps method')
           return{number: props.value*2};
     }
-
-    // componentDidMount(){
-    //     console.log('Child componentDidMount Method')
-    // }
 
     render(){
         console.log('Child render method')
